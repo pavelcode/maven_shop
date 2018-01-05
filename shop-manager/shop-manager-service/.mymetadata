@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="shop-manager-service"
+  id="myeclipse.1513820661552"
+  context-root="/shop-manager-service"
+  j2ee-spec="1.7"
+  archive="shop-manager-service.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

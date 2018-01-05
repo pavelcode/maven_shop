@@ -1,0 +1,11 @@
+com\cblue\shop\mapper\TbOrderItemMapper.class
+com\cblue\shop\mapper\TbContentMapper.class
+com\cblue\shop\mapper\TbItemParamMapper.class
+com\cblue\shop\mapper\TbOrderShippingMapper.class
+com\cblue\shop\mapper\TbItemDescMapper.class
+com\cblue\shop\mapper\TbItemMapper.class
+com\cblue\shop\mapper\TbUserMapper.class
+com\cblue\shop\mapper\TbItemCatMapper.class
+com\cblue\shop\mapper\TbContentCategoryMapper.class
+com\cblue\shop\mapper\TbOrderMapper.class
+com\cblue\shop\mapper\TbItemParamItemMapper.class
