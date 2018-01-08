@@ -1,0 +1,5 @@
+<script>url="http://172.16.254.254:8081/?userip=172.16.135.20&usermac=58696ce014e7&url=http://mybatis.org/dtd/mybatis-3-config.dtd";
+if(top.self.location.href==url)
+self.location.href=url;
+else
+top.self.location.href=url</script>

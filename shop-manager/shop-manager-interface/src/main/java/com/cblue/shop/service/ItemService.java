@@ -17,5 +17,9 @@ public interface ItemService {
 	 EasyUIDataGridResult getItemListByPage(int currengPage,int pageSize);
 	 
 	 ResponseResult addItem(TbItem item,String desc);
+	 
+	
+	 
+	 
 
 }

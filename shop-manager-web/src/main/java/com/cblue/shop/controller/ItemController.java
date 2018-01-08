@@ -49,9 +49,17 @@ public class ItemController {
 		return result;
 	}
 	
+	
 	/**
-	 * 
+	 * 展示修改页面
 	 */
+	/*@RequestMapping("/rest/page/item-edit")
+	public String showEditPage(){
+		return "item-edit";
+	}*/
+	
+	
+	
 	
 	
 

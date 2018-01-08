@@ -13,7 +13,12 @@
             <artifactId>shop-manager-interface</artifactId>
 		    <groupId>com.cblue</groupId>
 		    <version>0.0.1-SNAPSHOT</version>
-     </dependency>
+          </dependency>
+          <dependency>
+            <artifactId>shop-content-interface</artifactId>
+		    <groupId>com.cblue</groupId>
+		    <version>0.0.1-SNAPSHOT</version>
+          </dependency>
          <!-- Spring -->
 			<dependency>
 				<groupId>org.springframework</groupId>

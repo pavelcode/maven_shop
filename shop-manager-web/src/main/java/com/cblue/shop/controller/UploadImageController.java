@@ -20,7 +20,7 @@ public class UploadImageController {
 	private String IMAGE_SERVER_URL;
     // produces=MediaType.TEXT_PLAIN_VALUE+";charset=utf-8"指定返回结果是text/plain类型，字符编码utf-8
 	@RequestMapping(value="/pic/upload", produces=MediaType.TEXT_PLAIN_VALUE+";charset=utf-8")
-	@ResponseBody //返回json格式数据
+	//@ResponseBody //返回json格式数据
 	public String uploadFile(MultipartFile uploadFile) {
 		try {
 			//把图片上传的图片服务器
@@ -45,12 +45,14 @@ public class UploadImageController {
 			result.put("error", 0);
 			result.put("url", url);
 			//在common项目中添加一个json工具类
+			System.out.println(JsonUtils.objectToJson(result));
 			return JsonUtils.objectToJson(result);
 		} catch (Exception e) {
 			e.printStackTrace();
 			Map result = new HashMap<>();
 			result.put("error", 1);
 			result.put("message", "图片上传失败");
+			System.out.println(JsonUtils.objectToJson(result));
 			return JsonUtils.objectToJson(result);
 		}
 	}

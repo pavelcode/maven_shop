@@ -23,6 +23,7 @@
 
     function getSelectionsIds(){
     	var itemList = $("#itemList");
+    	//取得所有选中行数据，返回元素记录的数组数据。
     	var sels = itemList.datagrid("getSelections");
     	var ids = [];
     	for(var i in sels){
@@ -42,6 +43,7 @@
         text:'编辑',
         iconCls:'icon-edit',
         handler:function(){
+            
         	var ids = getSelectionsIds();
         	if(ids.length == 0){
         		$.messager.alert('提示','必须选择一个商品才能编辑!');
@@ -51,12 +53,14 @@
         		$.messager.alert('提示','只能选择一个商品!');
         		return ;
         	}
-        	
-        	$("#itemEditWindow").window({
+            $("#itemEditWindow").window({
+               //回显数据
         		onLoad :function(){
-        			//回显数据
+        			//获得选中的数据
         			var data = $("#itemList").datagrid("getSelections")[0];
+        			//把商品价格进行格式化
         			data.priceView = E3.formatPrice(data.price);
+        			//在item-edit中的form中去加载数据
         			$("#itemeEditForm").form("load",data);
         			
         			// 加载商品描述
@@ -99,11 +103,14 @@
         				"pics" : data.image,
         				"cid" : data.cid,
         				fun:function(node){
-        					E3.changeItemParam(node, "itemeEditForm");
+        					TAOTAO.changeItemParam(node, "itemeEditForm");
         				}
         			});
         		}
         	}).window("open");
+        
+  
+        	
         }
     },{
         text:'删除',

@@ -1,1 +1,6 @@
+com\cblue\shop\controller\ItemController.class
+com\cblue\shop\controller\ContentCatController.class
 com\cblue\shop\controller\UploadImageController.class
+com\cblue\shop\controller\PageController.class
+com\cblue\shop\controller\ItemDescController.class
+com\cblue\shop\controller\ItemCatController.class

@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 /**
  * 自定义响应结构
  */
-public class ResponseResult {
+public class ResponseResult implements java.io.Serializable {
 
     // 定义jackson对象
     private static final ObjectMapper MAPPER = new ObjectMapper();

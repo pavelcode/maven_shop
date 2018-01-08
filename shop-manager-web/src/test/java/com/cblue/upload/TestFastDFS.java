@@ -22,7 +22,7 @@ public class TestFastDFS {
 	
 	@Test
 	public void upload()throws Exception{
-		ClientGlobal.init("E:\\Workspaces\\shop-manager-web\\src\\main\\resources\\conf\\client.conf");
+		ClientGlobal.init("E:\\Workspaces_Shop\\shop-manager-web\\src\\main\\resources\\conf\\client.conf");
 		
 		TrackerClient trackerClient = new TrackerClient();
 		
@@ -32,7 +32,7 @@ public class TestFastDFS {
 		
 		StorageClient storageClient = new StorageClient(trackerServer, storageServer);
 		
-		String str[]= storageClient.upload_appender_file("E:\\a.png","png",null);
+		String str[]= storageClient.upload_appender_file("E:\\a.jpg","jpg",null);
 		
 		for(String s:str){
 			System.out.println(s);
@@ -45,8 +45,8 @@ public class TestFastDFS {
 	 */
 	@Test
 	public void testUpload02() throws Exception {
-		FastDFSClient fastDFSClient = new FastDFSClient("E:\\Workspaces\\shop-manager-web\\src\\main\\resources\\conf\\client.conf");
-		String string = fastDFSClient.uploadFile("E:\\a.png");
+		FastDFSClient fastDFSClient = new FastDFSClient("E:\\Workspaces_Shop\\shop-manager-web\\src\\main\\resources\\conf\\client.conf");
+		String string = fastDFSClient.uploadFile("E:\\a.jpg");
 		System.out.println(string);
 	}
 
