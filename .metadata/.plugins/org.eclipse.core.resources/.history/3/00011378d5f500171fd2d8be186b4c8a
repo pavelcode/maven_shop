@@ -1,0 +1,18 @@
+package com.cblue.redis;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.cblue.common.jedis.JedisClient;
+
+public class TestJedisClient {
+	
+	
+	@Test
+	public void testJedisClient(){
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("");
+		applicationContext.getBean(JedisClient.class);
+	}
+
+}

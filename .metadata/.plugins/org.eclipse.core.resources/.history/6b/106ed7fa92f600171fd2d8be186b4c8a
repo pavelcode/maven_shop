@@ -1,0 +1,5 @@
+package com.cblue.redis;
+
+public class TestJedis {
+
+}

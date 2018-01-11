@@ -53,10 +53,10 @@ public class ItemController {
 	/**
 	 * 展示修改页面
 	 */
-	/*@RequestMapping("/rest/page/item-edit")
+	@RequestMapping("/rest/page/item-edit")
 	public String showEditPage(){
 		return "item-edit";
-	}*/
+	}
 	
 	
 	

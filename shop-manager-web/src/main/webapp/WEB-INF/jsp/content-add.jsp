@@ -60,16 +60,19 @@
 	
 	var contentAddPage  = {
 			submitForm : function (){
+			    //校验数据
 				if(!$('#contentAddForm').form('validate')){
 					$.messager.alert('提示','表单还未填写完成!');
 					return ;
 				}
+				//富文本编辑器同步
 				contentAddEditor.sync();
-				
+				//表单序列化之后，提交
 				$.post("/content/save",$("#contentAddForm").serialize(), function(data){
 					if(data.status == 200){
 						$.messager.alert('提示','新增内容成功!');
-    					$("#contentList").datagrid("reload");
+						//添加成功之后，刷新页面
+    					$("#contentList").datagrid("reload"); 
     					E3.closeCurrentWindow();
 					}
 				});

@@ -1,0 +1,9 @@
+package com.cblue.redis;
+
+public class TestJedis {
+	
+	/**
+	 * 单机版
+	 */
+
+}

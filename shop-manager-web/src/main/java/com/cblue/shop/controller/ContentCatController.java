@@ -6,10 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cblue.common.pojo.EasyUITreeNode;
+import com.cblue.common.pojo.ResponseResult;
 import com.cblue.shop.content.service.ContentCategoryService;
 
 /**
@@ -29,6 +31,17 @@ public class ContentCatController {
 		return list;
 	}
 	
+	
+	/**
+	 * 添加分类节点
+	 */
+	@RequestMapping(value="/content/category/create", method=RequestMethod.POST)
+	@ResponseBody
+	public ResponseResult createContentCategory(Long parentId, String name) {
+		//调用服务添加节点
+		ResponseResult responseResult = contentCategoryService.addContentCategory(parentId, name);
+		return responseResult;
+	}
 	
 	
 }

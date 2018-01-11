@@ -16,13 +16,14 @@ public class ItemDescController {
 	 * 模拟数据，不写dao了
 	 *加载数据的描述信息
 	 */
-	/*@RequestMapping("/rest/item/query/item/desc/{itemId}")
+	///rest/item/query/item/desc/'+data.id
+	@RequestMapping("/rest/item/query/item/desc/{itemId}")
 	@ResponseBody
 	public ResponseResult getItemDescById(@PathVariable Long itemId) {
 		System.out.println("getItemDescById----"+itemId);
 		TbItemDesc tbItemDesc = new TbItemDesc();
 		tbItemDesc.setItemDesc("描述信息");
 		return ResponseResult.ok(tbItemDesc);
-	}*/
+	}
 
 }

@@ -1,0 +1,35 @@
+package com.cblue.redis;
+
+import org.junit.Test;
+
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+
+public class TestJedis {
+	
+	/**
+	 * 单机版
+	 */
+	@Test
+	public void testJedis() throws Exception{
+		Jedis jedis = new Jedis("192.168.0.128",6379);
+		jedis.set("a", "100");
+		String value = jedis.get("a");
+		System.out.println(value);
+		jedis.close();
+	}
+	/**
+	 * 通过连接池获得Jedis对象
+	 */
+     @Test
+     public void testJediPool()throws Exception{
+    	 JedisPool jedisPool = new JedisPool("192.168.0.128",6379);
+    	 Jedis jedis = jedisPool.getResource();
+ 		 jedis.set("a", "100");
+ 		 String value = jedis.get("a");
+ 		 System.out.println(value);
+ 		 jedis.close();
+ 		 jedisPool.close();
+     }
+	
+}

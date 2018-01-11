@@ -1,0 +1,5 @@
+package com.cblue.shop.content.service;
+
+public interface ContentService {
+
+}

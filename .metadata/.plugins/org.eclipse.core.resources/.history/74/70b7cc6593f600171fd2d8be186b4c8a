@@ -1,0 +1,15 @@
+package com.cblue.redis;
+
+import org.junit.Test;
+
+public class TestJedis {
+	
+	/**
+	 * 单机版
+	 */
+	@Test
+	public void testJedis() throws Exception{
+		
+	}
+
+}

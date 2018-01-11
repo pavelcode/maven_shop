@@ -1,0 +1,13 @@
+package com.cblue.redis;
+
+import org.junit.Test;
+
+public class TestJedisClient {
+	
+	
+	@Test
+	public void testJedisClient(){
+		
+	}
+
+}
