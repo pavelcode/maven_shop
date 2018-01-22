@@ -41,4 +41,6 @@
 	<dubbo:reference interface="com.cblue.shop.service.ItemService" id="itemService" />
 	<dubbo:reference interface="com.cblue.shop.service.ItemCatService" id="itemCatService" />
 	<dubbo:reference interface="com.cblue.shop.content.service.ContentCategoryService" id="contentCategoryService" />
+	<dubbo:reference interface="com.cblue.shop.content.service.ContentService" id="contentService" />
+	<dubbo:reference interface="com.cblue.shop.search.SearchItemService" id="searchItemService" />
 </beans>

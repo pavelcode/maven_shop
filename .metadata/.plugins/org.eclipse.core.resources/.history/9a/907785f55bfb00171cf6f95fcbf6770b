@@ -1,0 +1,5 @@
+package com.cblue.shop.search;
+
+public interface SearchService {
+
+}

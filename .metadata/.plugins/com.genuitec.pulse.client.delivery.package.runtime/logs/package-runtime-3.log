@@ -1,62 +1,112 @@
-一月 09, 2018 8:48:37 上午 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
-信息: Package starting up at Tue Jan 09 08:48:37 GMT+08:00 2018
-一月 09, 2018 8:48:40 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+一月 17, 2018 2:43:10 下午 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+信息: Package starting up at Wed Jan 17 14:43:10 GMT+08:00 2018
+一月 17, 2018 2:43:15 下午 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+信息: Latest version of package has already been enabled in the workspace; check finished in 17ms
+一月 17, 2018 2:43:16 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 8:48:41 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+一月 17, 2018 2:43:17 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 8:48:41 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+一月 17, 2018 2:43:17 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-service.xml]
-一月 09, 2018 8:48:44 上午 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
-信息: Latest version of package has already been enabled in the workspace; check finished in 136ms
-一月 09, 2018 8:48:49 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+一月 17, 2018 2:43:20 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-redis.xml]
+一月 17, 2018 2:43:23 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager/shop-manager-service/src/main/resources/spring/applicationContext-service.xml]
-一月 09, 2018 8:48:49 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+一月 17, 2018 2:43:24 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager/shop-manager-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 8:48:49 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+一月 17, 2018 2:43:24 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager/shop-manager-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 8:49:06 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+一月 17, 2018 2:43:36 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager-web/src/main/resources/spring/springmvc.xml]
-一月 09, 2018 8:49:59 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-home-web/src/main/resources/spring/springmvc.xml]
-一月 09, 2018 8:50:01 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 8:50:01 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 8:50:02 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-service.xml]
-一月 09, 2018 8:50:03 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager/shop-manager-service/src/main/resources/spring/applicationContext-service.xml]
-一月 09, 2018 8:50:03 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager/shop-manager-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 8:50:03 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager/shop-manager-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 8:50:08 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager-web/src/main/resources/spring/springmvc.xml]
-一月 09, 2018 8:50:50 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 8:50:50 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 8:50:50 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-service.xml]
-一月 09, 2018 9:32:19 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager-web/src/main/resources/spring/springmvc.xml]
-一月 09, 2018 9:44:08 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-manager-web/src/main/resources/spring/springmvc.xml]
-一月 09, 2018 3:18:02 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 3:18:02 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 3:18:02 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-service.xml]
-一月 09, 2018 3:18:08 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 3:18:09 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 3:18:09 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-service.xml]
-一月 09, 2018 3:21:45 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-transaction.xml]
-一月 09, 2018 3:21:45 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-dao.xml]
-一月 09, 2018 3:21:45 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-content/shop-content-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 2:43:38 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 2:43:39 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 2:43:40 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 2:43:48 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search-web/src/main/resources/spring/springmvc.xml]
+一月 17, 2018 3:07:11 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search-web/src/main/resources/spring/springmvc.xml]
+一月 17, 2018 3:16:03 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 3:16:03 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 3:16:04 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 3:29:37 下午 org.hibernate.eclipse.HibernatePlugin start
+信息: HibernatePlugin Started
+一月 17, 2018 3:43:15 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 3:43:15 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 3:43:15 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 3:43:23 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 3:43:23 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 3:43:23 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 3:43:25 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 3:43:25 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 3:43:25 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 3:46:26 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 3:46:26 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 3:46:26 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 3:49:07 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 3:49:07 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 3:49:07 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 4:02:48 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 4:02:48 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 4:02:48 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 4:02:57 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 4:02:57 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 4:02:58 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 4:03:46 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 4:03:46 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 4:03:47 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 4:10:51 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 4:10:51 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 4:10:51 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 4:11:03 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 4:11:03 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 4:11:03 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 4:14:20 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search-web/src/main/resources/spring/springmvc.xml]
+一月 17, 2018 4:28:50 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search-web/src/main/resources/spring/springmvc.xml]
+一月 17, 2018 4:31:12 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search-web/src/main/resources/spring/springmvc.xml]
+一月 17, 2018 4:34:23 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-solr.xml]
+一月 17, 2018 4:34:23 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-service.xml]
+一月 17, 2018 4:34:23 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search/shop-search-service/src/main/resources/spring/applicationContext-dao.xml]
+一月 17, 2018 4:54:32 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-search-web/src/main/resources/spring/springmvc.xml]

@@ -9,7 +9,7 @@
   <artifactId>shop-content</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <build/>
+  <build></build>
   <modules>
   	<module>shop-content-interface</module>
   	<module>shop-content-service</module>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cblue.activemq.ActiveMqSpring&apos; to &apos;TestActiveMqSpring&apos;&#x0D;&#x0A;- Original project: &apos;shop-manager-service&apos;&#x0D;&#x0A;- Original element: &apos;com.cblue.activemq.ActiveMqSpring&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cblue.activemq.TestActiveMqSpring&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ActiveMqSpring&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;com.cblue.activemq{ActiveMqSpring.java[ActiveMqSpring" matchStrategy="1" name="TestActiveMqSpring" qualified="false" references="true" similarDeclarations="false" stamp="1516605204737" textual="false" version="1.0"/>
+</session>

@@ -1,3 +1,0 @@
-eclipse.preferences.version=1
-validator.Checked=src/main/resources/spring/applicationContext-service.xml,src/main/webapp/META-INF/dtd/dubbo.xsd
-validator.Unchecked=

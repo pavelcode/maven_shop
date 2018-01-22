@@ -13,8 +13,11 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Red" key="selection"/>
+		<item value="servlet" key="selection"/>
 		<list key="findhistory">
+			<item value="servlet"/>
+			<item value="mq"/>
+			<item value="solr"/>
 			<item value="red"/>
 			<item value="http://www.e3mall.cn"/>
 			<item value="http://www.e3mall.cn/"/>

@@ -1,0 +1,9 @@
+package com.cblue.common.pojo;
+
+public class SearchResult {
+	
+	private long totalPages;
+	private int recordCount;
+	private List<SearchItem> itemList;
+
+}

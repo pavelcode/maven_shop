@@ -2,6 +2,8 @@ E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\pojo\EasyUITreeNod
 E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\pojo\ResponseResult.java
 E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\utils\JsonUtils.java
 E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\jedis\JedisClient.java
+E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\pojo\SearchItem.java
+E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\pojo\SearchResult.java
 E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\jedis\JedisClientCluster.java
 E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\utils\FastDFSClient.java
 E:\Workspaces_Shop\shop-common\src\main\java\com\cblue\common\pojo\EasyUIDataGridResult.java

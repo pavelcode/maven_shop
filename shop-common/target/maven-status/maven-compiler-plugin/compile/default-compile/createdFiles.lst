@@ -1,4 +1,4 @@
 com\cblue\common\pojo\EasyUIDataGridResult.class
-com\cblue\common\utils\JsonUtils.class
-com\cblue\common\pojo\EasyUITreeNode.class
 com\cblue\common\utils\FastDFSClient.class
+com\cblue\common\pojo\EasyUITreeNode.class
+com\cblue\common\utils\JsonUtils.class
