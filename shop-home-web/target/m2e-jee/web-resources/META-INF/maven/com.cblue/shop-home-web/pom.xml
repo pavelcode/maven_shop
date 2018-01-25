@@ -4,7 +4,7 @@
     <groupId>com.cblue</groupId>
     <artifactId>shop-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <relativePath>../shop-manager/pom.xml</relativePath>
+    <relativePath>../shop-parent/pom.xml</relativePath>
   </parent>
   <groupId>com.cblue</groupId>
   <artifactId>shop-home-web</artifactId>

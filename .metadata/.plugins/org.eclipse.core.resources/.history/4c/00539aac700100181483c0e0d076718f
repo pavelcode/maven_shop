@@ -1,0 +1,6 @@
+package com.cblue.shop.item.controller;
+
+@Controller
+public class ItemController {
+
+}

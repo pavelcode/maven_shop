@@ -1,0 +1,7 @@
+${student.id}--${student.name}--${student.age}
+
+
+
+<#list studentList as student>
+  ${student.index}-- ${student.id}--${student.name}
+</#list>

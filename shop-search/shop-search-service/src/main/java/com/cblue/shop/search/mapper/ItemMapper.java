@@ -6,4 +6,6 @@ import com.cblue.common.pojo.SearchItem;
 
 public interface ItemMapper {
 	List<SearchItem> getSeachItemList();
+	
+	SearchItem getItemById(long itemId);
 }

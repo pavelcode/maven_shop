@@ -1,0 +1,5 @@
+package com.cblue.shop.item.pojo;
+
+public class Item {
+
+}

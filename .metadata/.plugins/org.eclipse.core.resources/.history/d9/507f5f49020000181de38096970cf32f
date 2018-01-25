@@ -1,0 +1,118 @@
+package com.cblue.shop.service.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+
+import com.cblue.common.pojo.EasyUIDataGridResult;
+import com.cblue.common.pojo.ResponseResult;
+import com.cblue.common.utils.IDUtils;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
+import org.springframework.stereotype.Service;
+
+import com.cblue.shop.mapper.TbItemDescMapper;
+import com.cblue.shop.mapper.TbItemMapper;
+import com.cblue.shop.pojo.TbItem;
+import com.cblue.shop.pojo.TbItemDesc;
+import com.cblue.shop.pojo.TbItemExample;
+import com.cblue.shop.pojo.TbItemExample.Criteria;
+import com.cblue.shop.service.ItemService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	private TbItemMapper itemMapper;
+
+	@Override
+	public TbItem getItemById(Long id) {
+		// 两种方式
+		// 方式1
+		// 根据主键查询
+		// TbItem tbItem = itemMapper.selectByPrimaryKey(itemId);
+		// 方式2
+		TbItemExample example = new TbItemExample();
+		Criteria criteria = example.createCriteria();
+		// 设置查询条件
+		criteria.andIdEqualTo(id);
+		// 执行查询
+		List<TbItem> list = itemMapper.selectByExample(example);
+		if (list != null && list.size() > 0) {
+			return list.get(0);
+		}
+		return null;
+	}
+
+	@Override
+	public EasyUIDataGridResult getItemListByPage(int currengPage, int pageSize) {
+		// TODO Auto-generated method stub
+		// 设置分页信息
+		PageHelper.startPage(currengPage, pageSize);
+		// 执行查询
+		TbItemExample example = new TbItemExample();
+		List<TbItem> list = itemMapper.selectByExample(example);
+		// 创建一个返回值对象
+		EasyUIDataGridResult result = new EasyUIDataGridResult();
+		result.setRows(list);
+		// 取分页结果
+		PageInfo<TbItem> pageInfo = new PageInfo<TbItem>(list);
+		// 取总记录数
+		long total = pageInfo.getTotal();
+		result.setTotal(total);
+		return result;
+	}
+
+	@Autowired
+	private TbItemDescMapper itemDescMapper;
+	@Autowired
+	private JmsTemplate jmsTemplate;
+	@Resource
+	private Destination topicDestination;
+	
+	@Override
+	public ResponseResult addItem(TbItem item, String desc) {
+		// 生成商品id
+		final long itemId = IDUtils.genItemId();
+		// 补全item的属性
+		item.setId(itemId);
+		// 1-正常，2-下架，3-删除
+		item.setStatus((byte) 1);
+		item.setCreated(new Date());
+		item.setUpdated(new Date());
+		// 向商品表插入数据
+		itemMapper.insert(item);
+		// 创建一个商品描述表对应的pojo对象。
+		TbItemDesc itemDesc = new TbItemDesc();
+		// 补全属性
+		itemDesc.setItemId(itemId);
+		itemDesc.setItemDesc(desc);
+		itemDesc.setCreated(new Date());
+		itemDesc.setUpdated(new Date());
+		// 向商品描述表插入数据
+		itemDescMapper.insert(itemDesc);
+		//添加商品发送消息
+		jmsTemplate.send(topicDestination, new MessageCreator() {
+					
+					@Override
+					public Message createMessage(Session session) throws JMSException {
+						TextMessage textMessage = session.createTextMessage(itemId + "");
+						return textMessage;
+					}
+		});
+		// 返回成功
+		return ResponseResult.ok();
+	}
+
+	
+	
+}

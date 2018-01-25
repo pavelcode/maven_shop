@@ -1,0 +1,7 @@
+package com.cblue.shop.item.pojo;
+
+import com.cblue.shop.pojo.TbItem;
+
+public class Item extends TbItem{
+
+}

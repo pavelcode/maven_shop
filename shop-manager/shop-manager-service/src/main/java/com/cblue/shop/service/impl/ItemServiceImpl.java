@@ -3,11 +3,24 @@ package com.cblue.shop.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import javax.annotation.Resource;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+
+import com.cblue.common.jedis.JedisClient;
 import com.cblue.common.pojo.EasyUIDataGridResult;
 import com.cblue.common.pojo.ResponseResult;
 import com.cblue.common.utils.IDUtils;
+import com.cblue.common.utils.JsonUtils;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
 import com.cblue.shop.mapper.TbItemDescMapper;
@@ -25,9 +38,29 @@ public class ItemServiceImpl implements ItemService {
 
 	@Autowired
 	private TbItemMapper itemMapper;
+	@Autowired
+	private JedisClient jedisClient;
+	
+	//前缀 在conf/resource.properties中配置，在applicationContext-dao.xml中配置扫描文件
+	@Value("${REDIS_ITEM_PRE}")
+	private String REDIS_ITEM_PRE; //前缀 ITEM 
+	@Value("${ITEM_CACHE_EXPIRE}")  
+	private Integer ITEM_CACHE_EXPIRE;  //超时时间1小时 3600秒
+	
+	
 
 	@Override
-	public TbItem getItemById(Long id) {
+	public TbItem getItemById(Long itemId) {
+		//查询缓存
+		try {
+			  String json = jedisClient.get(REDIS_ITEM_PRE + ":" + itemId + ":BASE");
+			  if(StringUtils.isNotBlank(json)) {
+				 TbItem tbItem = JsonUtils.jsonToPojo(json, TbItem.class);
+			  	 return tbItem;
+			  }
+			} catch (Exception e) {
+					e.printStackTrace();
+		}
 		// 两种方式
 		// 方式1
 		// 根据主键查询
@@ -36,10 +69,18 @@ public class ItemServiceImpl implements ItemService {
 		TbItemExample example = new TbItemExample();
 		Criteria criteria = example.createCriteria();
 		// 设置查询条件
-		criteria.andIdEqualTo(id);
+		criteria.andIdEqualTo(itemId);
 		// 执行查询
 		List<TbItem> list = itemMapper.selectByExample(example);
 		if (list != null && list.size() > 0) {
+			//把结果添加到缓存
+			try {
+				jedisClient.set(REDIS_ITEM_PRE + ":" + itemId + ":BASE", JsonUtils.objectToJson(list.get(0)));
+				//设置过期时间
+				jedisClient.expire(REDIS_ITEM_PRE + ":" + itemId + ":BASE", ITEM_CACHE_EXPIRE);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			return list.get(0);
 		}
 		return null;
@@ -66,11 +107,15 @@ public class ItemServiceImpl implements ItemService {
 
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
+	@Autowired
+	private JmsTemplate jmsTemplate;
+	@Resource
+	private Destination topicDestination;
 	
 	@Override
 	public ResponseResult addItem(TbItem item, String desc) {
 		// 生成商品id
-		long itemId = IDUtils.genItemId();
+		final long itemId = IDUtils.genItemId();
 		// 补全item的属性
 		item.setId(itemId);
 		// 1-正常，2-下架，3-删除
@@ -88,8 +133,42 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setUpdated(new Date());
 		// 向商品描述表插入数据
 		itemDescMapper.insert(itemDesc);
+		//添加商品发送消息
+		jmsTemplate.send(topicDestination, new MessageCreator() {
+					@Override
+					public Message createMessage(Session session) throws JMSException {
+						TextMessage textMessage = session.createTextMessage(itemId + "");
+						return textMessage;
+					}
+		});
 		// 返回成功
 		return ResponseResult.ok();
+	}
+
+
+	@Override
+	public TbItemDesc getItemDescById(Long itemId) {
+		// TODO Auto-generated method stub
+		//查询缓存
+		 try {
+			 String json = jedisClient.get(REDIS_ITEM_PRE + ":" + itemId + ":DESC");
+			 if(StringUtils.isNotBlank(json)) {
+					TbItemDesc tbItemDesc = JsonUtils.jsonToPojo(json, TbItemDesc.class);
+					return tbItemDesc;
+				}
+			} catch (Exception e) {
+					e.printStackTrace();
+		    }
+		TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+		//把结果添加到缓存
+		try {
+			jedisClient.set(REDIS_ITEM_PRE + ":" + itemId + ":DESC", JsonUtils.objectToJson(itemDesc));
+			//设置过期时间
+			jedisClient.expire(REDIS_ITEM_PRE + ":" + itemId + ":DESC", ITEM_CACHE_EXPIRE);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return itemDesc;
 	}
 
 	

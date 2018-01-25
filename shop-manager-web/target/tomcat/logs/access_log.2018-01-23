@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:06 +0800] "GET /js/jquery-easyui-1.4.1/themes/gray/images/loading.gif HTTP/1.1" 200 1737 http-bio-8081-exec-2 168
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:08 +0800] "GET /item-add?_=1516688409804 HTTP/1.1" 200 4610 http-bio-8081-exec-1 1296
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:08 +0800] "GET /js/kindeditor-4.1.10/themes/default/default.css HTTP/1.1" 200 21967 http-bio-8081-exec-4 9
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:08 +0800] "GET /js/kindeditor-4.1.10/kindeditor-all-min.js?_=1516688409805 HTTP/1.1" 200 179915 http-bio-8081-exec-3 13
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:08 +0800] "GET /js/kindeditor-4.1.10/lang/zh_CN.js?_=1516688409806 HTTP/1.1" 200 8488 http-bio-8081-exec-6 5
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:08 +0800] "GET /js/kindeditor-4.1.10/themes/default/default.png HTTP/1.1" 200 8299 http-bio-8081-exec-7 4
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:09 +0800] "GET /js/jquery-easyui-1.4.1/themes/icons/filesave.png HTTP/1.1" 200 898 http-bio-8081-exec-8 6
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:12 +0800] "POST /item/cat/list HTTP/1.1" 200 977 http-bio-8081-exec-9 3045
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:15 +0800] "POST /item/cat/list HTTP/1.1" 200 259 http-bio-8081-exec-10 21
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:16 +0800] "POST /item/cat/list HTTP/1.1" 200 622 http-bio-8081-exec-1 21
+0:0:0:0:0:0:0:1 - - [23/Jan/2018:14:26:35 +0800] "POST /item/save HTTP/1.1" 200 48 http-bio-8081-exec-3 1452
