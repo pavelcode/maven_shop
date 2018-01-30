@@ -27,13 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
-			<item value="com.cblue"/>
 		</list>
 		<list key="package">
-			<item value="org.shop.search.service"/>
 		</list>
 		<list key="artifactId">
-			<item value="shop-search-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,6 +45,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="shop-sso-service"/>
+			<item value="shop-sso-interface"/>
 			<item value="shop-search-service"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -65,8 +64,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="shop-search-service"/>
-			<item value="shop-search"/>
+			<item value="shop-sso-web"/>
+			<item value="shop-parent"/>
+			<item value="shop-sso-service"/>
+			<item value="shop-sso"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

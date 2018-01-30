@@ -31,7 +31,7 @@ public class TestFreeMarker {
 		Template template = configuration.getTemplate("student.fm");
 		//6、创建一个数据集。可以是pojo也可以是map。推荐使用map
 		Map data = new HashMap();
-		//data.put("hello", "hello freemarker!");
+		data.put("hello", "hello freemarker!");
 		//创建一个pojo对象
 		Student student = new Student(1, "小明", 18, "回龙观");
 		data.put("student", student);
@@ -48,7 +48,7 @@ public class TestFreeMarker {
 		stuList.add(new Student(9, "小明9", 26, "回龙观"));
 		data.put("studentList", stuList);
 		//添加日期类型
-		//data.put("date", new Date());
+		data.put("date", new Date());
 		//null值的测试
 		//data.put("val", "123");
 		//7、创建一个Writer对象，指定输出文件的路径及文件名

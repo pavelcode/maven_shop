@@ -1,14 +1,4 @@
-一月 24, 2018 9:53:50 上午 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
-信息: Package starting up at Wed Jan 24 09:53:50 GMT+08:00 2018
-一月 24, 2018 9:53:55 上午 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
-信息: Latest version of package has already been enabled in the workspace; check finished in 41ms
-一月 24, 2018 10:05:07 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-item-web/src/main/resources/spring/springmvc.xml]
-一月 24, 2018 10:05:53 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-item-web/src/main/resources/spring/springmvc.xml]
-一月 24, 2018 10:06:08 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-item-web/src/main/resources/spring/springmvc.xml]
-一月 24, 2018 10:06:13 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-item-web/src/main/resources/spring/springmvc.xml]
-一月 24, 2018 10:06:57 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-信息: Loading XML bean definitions from file [E:/Workspaces_Shop/shop-item-web/src/main/resources/spring/springmvc.xml]
+一月 26, 2018 1:39:08 下午 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+信息: Package starting up at Fri Jan 26 13:39:08 GMT+08:00 2018
+一月 26, 2018 1:39:12 下午 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+信息: Latest version of package has already been enabled in the workspace; check finished in 30ms

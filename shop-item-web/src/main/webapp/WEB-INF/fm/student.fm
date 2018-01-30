@@ -1,9 +1,39 @@
-${student.id}--${student.name}--${student.age}
+﻿${student.id}--${student.name}--${student.age}
+
+<table>
+	<#list studentList as student>
+	   <#if student_index %2 ==0> 
+	        <tr bgcolor="red">
+	     <#else>         
+	        <tr bgcolor="blue">
+	   </#if>
+	        <td>${student_index}--${student.id}--${student.name}</td>
+	    </tr>
+	</#list>
+</table>
 
 
-<#list studentList as student>
-   <#if student_index %2 ==0>
-  ${student_index}--${student.id}--${student.name}
-   </#if>
-</#list>
+${date?date}<br/>
+${date?time}<br/>
+${date?datetime}<br/>
+${date?string("HH:mm:ss yyyy-MM-dd")}<br/>
+
+
+
+${value!"value的默认值"}<br/>
+<#if value??>
+value存在
+<#else>
+value不存在
+</#if>
+
+
+<#include "hello.fm">
+
+
+
+
+
+
+
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.cblue.shop.item.lisenter&apos; to &apos;com.cblue.shop.item.listener&apos;&#x0D;&#x0A;- Original project: &apos;shop-item-web&apos;&#x0D;&#x0A;- Original element: &apos;shop-item-web/src/main/java/com.cblue.shop.item.lisenter&apos;&#x0D;&#x0A;- Renamed element: &apos;shop-item-web/src/main/java/com.cblue.shop.item.listener&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.cblue.shop.item.lisenter&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.cblue.shop.item.lisenter" name="com.cblue.shop.item.listener" qualified="false" references="true" stamp="1517195326694" textual="false" version="1.0"/>
+</session>

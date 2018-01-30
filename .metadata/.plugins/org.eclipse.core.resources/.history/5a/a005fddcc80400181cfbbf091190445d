@@ -1,0 +1,5 @@
+package com.cblue.sso.controller;
+
+public class RegisterController {
+
+}

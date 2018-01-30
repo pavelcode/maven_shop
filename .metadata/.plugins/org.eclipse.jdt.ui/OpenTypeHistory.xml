@@ -2,4 +2,6 @@
 <typeInfoHistroy>
 <typeInfo handle="=shop-search-interface/src\/main\/java&lt;com.cblue.shop.search{SearchItemService.java[SearchItemService" modifiers="513" timestamp="1516005458584"/>
 <typeInfo handle="=shop-search-service/D:\/mvnRepo\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet(HandlerExceptionResolver.class[HandlerExceptionResolver" modifiers="1537" timestamp="1463390358000"/>
+<typeInfo handle="=shop-item-web/D:\/mvnRepo\/org\/springframework\/spring-messaging\/4.2.4.RELEASE\/spring-messaging-4.2.4.RELEASE.jar&lt;org.springframework.messaging(Message.class[Message" modifiers="1537" timestamp="1463390938000"/>
+<typeInfo handle="=shop-item-web/D:\/mvnRepo\/org\/springframework\/spring-jms\/4.2.4.RELEASE\/spring-jms-4.2.4.RELEASE.jar&lt;org.springframework.jms.listener(MessageListenerContainer.class[MessageListenerContainer" modifiers="1537" timestamp="1463390901000"/>
 </typeInfoHistroy>

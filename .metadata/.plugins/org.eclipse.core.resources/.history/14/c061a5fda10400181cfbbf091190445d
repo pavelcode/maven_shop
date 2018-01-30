@@ -1,0 +1,7 @@
+package com.cblue.shop.item.listener;
+
+import javax.jms.MessageListener;
+
+public class CreateHtmlListener  {
+
+}

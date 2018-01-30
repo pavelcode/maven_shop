@@ -1,7 +1,0 @@
-package com.cblue.shop.search.exception;
-
-import org.springframework.web.servlet.HandlerExceptionResolver;
-
-public class GlobleExcetionResolver implements HandlerExceptionResolver {
-
-}

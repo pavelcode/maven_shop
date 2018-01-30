@@ -1,0 +1,11 @@
+${student.id}--${student.name}--${student.age}
+
+
+<#list studentList as student>
+   <#if student_index %2 ==0>
+  ${student_index}--${student.id}--${student.name}
+   </#if>
+</#list>
+
+
+

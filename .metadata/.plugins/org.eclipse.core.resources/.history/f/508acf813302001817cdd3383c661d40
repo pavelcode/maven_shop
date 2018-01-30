@@ -1,0 +1,16 @@
+${student.id}--${student.name}--${student.age}
+
+
+<#list studentList as student>
+   <#if student_index %2 ==0> 
+        <tr bgcolor="red">
+     <#else>         
+        <tr bgcolor="blue">
+   </#if>
+    <td>${student_index}--${student.id}--${student.name}</td>
+    </tr>
+</#list>
+
+
+
+

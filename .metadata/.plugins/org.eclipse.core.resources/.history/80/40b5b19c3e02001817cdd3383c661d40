@@ -1,0 +1,33 @@
+package com.cblue.shop.item.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+
+@Controller
+public class CreatHtmlController {
+	
+	
+	@Autowired
+	private FreeMarkerConfigurer freeMarkerConfigurer;
+	
+	@RequestMapping("/createhtml")
+	@ResponseBody
+	public String genHtml() throws Exception {
+		Configuration configuration = freeMarkerConfigurer.getConfiguration();
+		//加载模板对象
+		Template template = configuration.getTemplate("hello.ftl");
+		//创建一个数据集
+		Map data = new HashMap<>();
+		data.put("hello", 123456);
+		//指定文件输出的路径及文件名
+		Writer out = new FileWriter(new File("D:/temp/JavaEE32/freemarker/hell2.html"));
+		//输出文件
+		template.process(data, out);
+		//关闭流
+		out.close();
+		
+		return "OK";
+	}
+
+}
