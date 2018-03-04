@@ -1,0 +1,22 @@
+package com.cblue.shop.sso.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.cblue.common.pojo.ResponseResult;
+
+@Controller
+public class RegisterController {
+
+	@RequestMapping("/page/register")
+	public String showRegister() {
+		return "register";
+	}
+	
+	@RequestMapping("/user/check/{param}/{type}")
+	@ResponseBody
+	public ResponseResult checkData(@PathVariable String param, @PathVariable Integer type) {
+		E3Result e3Result = registerService.checkData(param, type);
+		return e3Result;
+	}
+}

@@ -19,7 +19,7 @@
         <dependent-module archiveName="fastdfs_client-1.25.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fastdfs_client/fastdfs_client">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="shop-content-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shop-content-interface/shop-content-interface">
+        <dependent-module archiveName="shop-sso-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shop-sso-interface/shop-sso-interface">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="shop-sso-service"/>

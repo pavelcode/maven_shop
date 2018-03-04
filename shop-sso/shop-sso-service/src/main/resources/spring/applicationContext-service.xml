@@ -22,7 +22,9 @@
 	<!-- 用dubbo协议在20880端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20883" />
 	<!-- 声明需要暴露的服务接口 -->
-   <!--  <dubbo:service interface="com.cblue.shop.content.service.ContentCategoryService" ref="contentCategoryServiceImpl"  timeout="600000"/>  -->
+    <dubbo:service interface="com.cblue.shop.sso.service.RegisterService" ref="registerServiceImpl"  timeout="600000"/>
+    <dubbo:service interface="com.cblue.shop.sso.service.LoginService" ref="loginServiceImpl"  timeout="600000"/>
+    <dubbo:service interface="com.cblue.shop.sso.service.TokenService" ref="tokenServiceImpl"  timeout="600000"/>
 
 
 </beans>

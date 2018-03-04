@@ -1,0 +1,8 @@
+package com.cblue.shop.sso.service;
+
+
+public interface RegisterService {
+
+	Readable checkData(String param, int type);
+
+}

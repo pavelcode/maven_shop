@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.cbliue.shop.cart.interceptor&apos; to &apos;com.cblue.shop.cart.interceptor&apos;&#x0D;&#x0A;- Original project: &apos;shop-cart-web&apos;&#x0D;&#x0A;- Original element: &apos;shop-cart-web/src/main/java/com.cbliue.shop.cart.interceptor&apos;&#x0D;&#x0A;- Renamed element: &apos;shop-cart-web/src/main/java/com.cblue.shop.cart.interceptor&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.cbliue.shop.cart.interceptor&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.cbliue.shop.cart.interceptor" name="com.cblue.shop.cart.interceptor" qualified="false" references="true" stamp="1518308767809" textual="false" version="1.0"/>
+</session>

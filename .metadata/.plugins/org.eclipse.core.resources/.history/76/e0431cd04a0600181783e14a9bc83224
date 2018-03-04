@@ -1,0 +1,14 @@
+package com.cblue.shop.sso.service.impl;
+
+import com.cblue.common.pojo.ResponseResult;
+import com.cblue.shop.sso.service.LoginService;
+
+public class LoginServiceImpl implements LoginService {
+
+	@Override
+	public ResponseResult userLogin(String username, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

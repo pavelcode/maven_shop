@@ -1,0 +1,33 @@
+package com.cblue.shop.sso.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+
+import com.cblue.common.jedis.JedisClient;
+import com.cblue.common.pojo.ResponseResult;
+import com.cblue.shop.mapper.TbUserMapper;
+import com.cblue.shop.sso.service.LoginService;
+
+public class LoginServiceImpl implements LoginService {
+
+	/*业务逻辑：
+	 * 1、判断用户和密码是否正确
+	 * 2、如果不正确，返回登录失败
+	 * 3、如果正确生成token。
+	 * 4、把用户信息写入redis，key：token value：用户信息
+	 * 5、设置Session的过期时间
+	 * 6、把token返回
+	 */
+	@Autowired
+	private TbUserMapper userMapper;
+	@Autowired
+	private JedisClient jedisClient;
+	@Value("${SESSION_EXPIRE}")
+	private Integer SESSION_EXPIRE;  //默认过期时间30分钟
+	@Override
+	public ResponseResult userLogin(String username, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

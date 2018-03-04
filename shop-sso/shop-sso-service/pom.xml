@@ -14,7 +14,7 @@
 		    <version>0.0.1-SNAPSHOT</version>
      </dependency>
       <dependency>
-            <artifactId>shop-content-interface</artifactId>
+            <artifactId>shop-sso-interface</artifactId>
 		    <groupId>com.cblue</groupId>
 		    <version>0.0.1-SNAPSHOT</version>
      </dependency>

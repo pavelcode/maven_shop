@@ -27,9 +27,11 @@
 	<mvc:resources location="/images/" mapping="/images/**"/>
 	
 	<!-- 引用dubbo服务 -->
-    <dubbo:application name="shop-shop-web"/>
+    <dubbo:application name="shop-sso-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.0.128:2181"/>	
-<!-- 	<dubbo:reference interface="com.cblue.shop.content.service.ContentService" id="contentService" /> -->
+    <dubbo:reference interface="com.cblue.shop.sso.service.RegisterService" id="registerService" />
+    <dubbo:reference interface="com.cblue.shop.sso.service.LoginService" id="loginService" />
+    <dubbo:reference interface="com.cblue.shop.sso.service.TokenService" id="tokenService" />
 	
 	
 </beans>
